@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.DS_Store
+.env
+.venv/
+
+# BlenderProc / dataset output
+output/
+assets/
+
+# OS junk
+Thumbs.db
