@@ -7,11 +7,7 @@ A **BlenderProc-based synthetic dataset generator** for construction site object
 
 construction-dataset-generator/
 
-│── configs/ # YAML config files for assets, labels, lighting, camera
-
-│── generator/ # Core generator code
-
-│── scripts/ # Scripts to run the generator
+│── scripts/ # Script to run the generator
 
 │── assets/ # Place your 3D models here
 
