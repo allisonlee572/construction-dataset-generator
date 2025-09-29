@@ -28,31 +28,18 @@ pip install -r requirements.txt
 ### 2. Place assets
 Put your .obj models under assets/models/...
 ### 3. Run generator
-python scripts/run_generator.py
+blenderproc run scripts/run_generator.py
 ### 4. Outputs
 * RGB images (.png)
 * Segmentation maps
 * COCO annotations
 * HDF5 files
+* To visualize: blenderproc vis coco -i [image_index] -c coco_annotations.json -b output/0001
 
 Generated datasets will appear under output/0001/
 
-
-## Configuration
-Modify configs/default.yaml to:
-* Add/remove assets
-* Adjust scales
-* Configure lighting and camera parameters
-*  Extend label mappings
-
-## Accomplishments
-* Modularized the dataset generator
-* Configurable asset loading and rendering
-* Automatic COCO + HDF5 output
-* Utility for absolute texture path conversion
-* Clean, reusable project layout
-
 ## Next Steps
+* Create config, utilities, other files to clean code structure
 * Support for background buildings
 * Add Dockerfile for reproducibility 
 * CI/CD piepline for automated testing
